@@ -13,7 +13,8 @@ spring:
     datasource:
         type: com.alibaba.druid.pool.DruidDataSource
         driverClassName: com.mysql.jdbc.Driver
-        url: jdbc:mysql://localhost:3306/renren_security?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+        url: jdbc:mysql://localhost:3306/renren_security?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&useSSL=true
+#        url: jdbc:mysql://47.92.104.73:3306/ht?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&useSSL=true
         username: root
         password: root
     jackson:

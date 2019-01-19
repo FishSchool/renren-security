@@ -17,12 +17,10 @@
 package io.renren.config;
 
 
-import io.swagger.annotations.ApiOperation;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
-import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.service.ApiInfo;
 import springfox.documentation.service.ApiKey;
 import springfox.documentation.spi.DocumentationType;
@@ -42,7 +40,7 @@ public class SwaggerConfig {
             .apiInfo(apiInfo())
             .select()
             //加了ApiOperation注解的类，才生成接口文档
-            .apis(RequestHandlerSelectors.withMethodAnnotation(ApiOperation.class))
+//            .apis(RequestHandlerSelectors.withMethodAnnotation(ApiOperation.class))
             //包下的类，才生成接口文档
             //.apis(RequestHandlerSelectors.basePackage("io.renren.controller"))
             .paths(PathSelectors.any())
@@ -52,9 +50,9 @@ public class SwaggerConfig {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-            .title("人人开源")
-            .description("renren-api文档")
-            .termsOfServiceUrl("http://www.renren.io")
+            .title("vode系统API接口")
+            .description("vode-api文档")
+//            .termsOfServiceUrl()
             .version("3.2.0")
             .build();
     }

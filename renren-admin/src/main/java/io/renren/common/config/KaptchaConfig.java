@@ -27,7 +27,7 @@ import java.util.Properties;
 /**
  * 生成验证码配置
  *
- * @author Mark sunlightcs@gmail.com
+ * @author Mark
  * @since 2.1.0 2017-04-20
  */
 @Configuration
@@ -39,6 +39,7 @@ public class KaptchaConfig {
         properties.put("kaptcha.border", "no");
         properties.put("kaptcha.textproducer.font.color", "black");
         properties.put("kaptcha.textproducer.char.space", "5");
+        properties.put("kaptcha.textproducer.char.length", "4");
         Config config = new Config(properties);
         DefaultKaptcha defaultKaptcha = new DefaultKaptcha();
         defaultKaptcha.setConfig(config);

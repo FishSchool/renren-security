@@ -30,7 +30,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 /**
  * Swagger配置
  *
- * @author Mark sunlightcs@gmail.com
+ * @author Mark
  * @since 3.0.0 2018-01-16
  */
 @Configuration
@@ -54,7 +54,7 @@ public class SwaggerConfig{
         return new ApiInfoBuilder()
             .title("人人开源")
             .description("renren-admin文档")
-            .termsOfServiceUrl("http://www.renren.io")
+            .termsOfServiceUrl("")
             .version("3.2.0")
             .build();
     }

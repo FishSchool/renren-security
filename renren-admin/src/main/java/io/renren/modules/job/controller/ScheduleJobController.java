@@ -31,7 +31,7 @@ import java.util.Map;
 /**
  * 定时任务
  *
- * @author Mark sunlightcs@gmail.com
+ * @author Mark
  * @since 1.2.0 2016-11-28
  */
 @RestController
@@ -72,7 +72,7 @@ public class ScheduleJobController {
 		ValidatorUtils.validateEntity(scheduleJob);
 		
 		scheduleJobService.save(scheduleJob);
-		
+//		com.baomidou.mybatisplus.mapper.LogicSqlInjector;
 		return R.ok();
 	}
 	

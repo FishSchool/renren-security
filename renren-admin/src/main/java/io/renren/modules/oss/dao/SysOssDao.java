@@ -20,13 +20,18 @@ package io.renren.modules.oss.dao;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
 import io.renren.modules.oss.entity.SysOssEntity;
 
+import java.io.Serializable;
+import java.util.Collection;
+import java.util.List;
+
 /**
  * 文件上传
  * 
- * @author chenshun
- * @email sunlightcs@gmail.com
+ * @author
+ * @email
  * @date 2017-03-25 12:13:26
  */
 public interface SysOssDao extends BaseMapper<SysOssEntity> {
-	
+
+
 }

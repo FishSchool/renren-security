@@ -22,8 +22,8 @@ import java.util.Map;
 /**
  * 返回数据
  * 
- * @author chenshun
- * @email sunlightcs@gmail.com
+ * @author
+ * @email
  * @date 2016年10月27日 下午9:59:27
  */
 public class R extends HashMap<String, Object> {
@@ -69,5 +69,19 @@ public class R extends HashMap<String, Object> {
 	public R put(String key, Object value) {
 		super.put(key, value);
 		return this;
+	}
+
+	public static R ok(String key, Object value) {
+		R r = new R();
+		r.put(key, value);
+		return r;
+	}
+
+
+
+	public static R error(Map<String, Object> map) {
+		R r = new R();
+		r.putAll(map);
+		return r;
 	}
 }
